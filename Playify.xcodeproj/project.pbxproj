@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3AA3B7721B70D36C00DD85EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B7711B70D36C00DD85EA /* AppDelegate.m */; };
+		3AA3B7741B70D36C00DD85EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B7731B70D36C00DD85EA /* main.m */; };
+		3AA3B7771B70D36C00DD85EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B7761B70D36C00DD85EA /* ViewController.m */; };
+		3AA3B7791B70D36C00DD85EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3B7781B70D36C00DD85EA /* Images.xcassets */; };
+		3AA3B77C1B70D36C00DD85EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3B77A1B70D36C00DD85EA /* Main.storyboard */; };
+		3AA3B7881B70D36C00DD85EA /* PlayifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3B7871B70D36C00DD85EA /* PlayifyTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AA3B7821B70D36C00DD85EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AA3B7631B70D36C00DD85EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3AA3B76A1B70D36C00DD85EA;
+			remoteInfo = Playify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3AA3B76B1B70D36C00DD85EA /* Playify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA3B76F1B70D36C00DD85EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA3B7701B70D36C00DD85EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3AA3B7711B70D36C00DD85EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3AA3B7731B70D36C00DD85EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AA3B7751B70D36C00DD85EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3AA3B7761B70D36C00DD85EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3AA3B7781B70D36C00DD85EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3AA3B77B1B70D36C00DD85EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AA3B7811B70D36C00DD85EA /* PlayifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA3B7861B70D36C00DD85EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3AA3B7871B70D36C00DD85EA /* PlayifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayifyTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AA3B7681B70D36C00DD85EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA3B77E1B70D36C00DD85EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3AA3B7621B70D36C00DD85EA = {
+			isa = PBXGroup;
+			children = (
+				3AA3B76D1B70D36C00DD85EA /* Playify */,
+				3AA3B7841B70D36C00DD85EA /* PlayifyTests */,
+				3AA3B76C1B70D36C00DD85EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA3B76C1B70D36C00DD85EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B76B1B70D36C00DD85EA /* Playify.app */,
+				3AA3B7811B70D36C00DD85EA /* PlayifyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA3B76D1B70D36C00DD85EA /* Playify */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B7701B70D36C00DD85EA /* AppDelegate.h */,
+				3AA3B7711B70D36C00DD85EA /* AppDelegate.m */,
+				3AA3B7751B70D36C00DD85EA /* ViewController.h */,
+				3AA3B7761B70D36C00DD85EA /* ViewController.m */,
+				3AA3B7781B70D36C00DD85EA /* Images.xcassets */,
+				3AA3B77A1B70D36C00DD85EA /* Main.storyboard */,
+				3AA3B76E1B70D36C00DD85EA /* Supporting Files */,
+			);
+			path = Playify;
+			sourceTree = "<group>";
+		};
+		3AA3B76E1B70D36C00DD85EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B76F1B70D36C00DD85EA /* Info.plist */,
+				3AA3B7731B70D36C00DD85EA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AA3B7841B70D36C00DD85EA /* PlayifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B7871B70D36C00DD85EA /* PlayifyTests.m */,
+				3AA3B7851B70D36C00DD85EA /* Supporting Files */,
+			);
+			path = PlayifyTests;
+			sourceTree = "<group>";
+		};
+		3AA3B7851B70D36C00DD85EA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AA3B7861B70D36C00DD85EA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AA3B76A1B70D36C00DD85EA /* Playify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA3B78B1B70D36C00DD85EA /* Build configuration list for PBXNativeTarget "Playify" */;
+			buildPhases = (
+				3AA3B7671B70D36C00DD85EA /* Sources */,
+				3AA3B7681B70D36C00DD85EA /* Frameworks */,
+				3AA3B7691B70D36C00DD85EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Playify;
+			productName = Playify;
+			productReference = 3AA3B76B1B70D36C00DD85EA /* Playify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3AA3B7801B70D36C00DD85EA /* PlayifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA3B78E1B70D36C00DD85EA /* Build configuration list for PBXNativeTarget "PlayifyTests" */;
+			buildPhases = (
+				3AA3B77D1B70D36C00DD85EA /* Sources */,
+				3AA3B77E1B70D36C00DD85EA /* Frameworks */,
+				3AA3B77F1B70D36C00DD85EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3AA3B7831B70D36C00DD85EA /* PBXTargetDependency */,
+			);
+			name = PlayifyTests;
+			productName = PlayifyTests;
+			productReference = 3AA3B7811B70D36C00DD85EA /* PlayifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AA3B7631B70D36C00DD85EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Mateusz Jaros";
+				TargetAttributes = {
+					3AA3B76A1B70D36C00DD85EA = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					3AA3B7801B70D36C00DD85EA = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 3AA3B76A1B70D36C00DD85EA;
+					};
+				};
+			};
+			buildConfigurationList = 3AA3B7661B70D36C00DD85EA /* Build configuration list for PBXProject "Playify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3AA3B7621B70D36C00DD85EA;
+			productRefGroup = 3AA3B76C1B70D36C00DD85EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AA3B76A1B70D36C00DD85EA /* Playify */,
+				3AA3B7801B70D36C00DD85EA /* PlayifyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AA3B7691B70D36C00DD85EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA3B7791B70D36C00DD85EA /* Images.xcassets in Resources */,
+				3AA3B77C1B70D36C00DD85EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA3B77F1B70D36C00DD85EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AA3B7671B70D36C00DD85EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA3B7771B70D36C00DD85EA /* ViewController.m in Sources */,
+				3AA3B7741B70D36C00DD85EA /* main.m in Sources */,
+				3AA3B7721B70D36C00DD85EA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AA3B77D1B70D36C00DD85EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AA3B7881B70D36C00DD85EA /* PlayifyTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3AA3B7831B70D36C00DD85EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3AA3B76A1B70D36C00DD85EA /* Playify */;
+			targetProxy = 3AA3B7821B70D36C00DD85EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3AA3B77A1B70D36C00DD85EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA3B77B1B70D36C00DD85EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AA3B7891B70D36C00DD85EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3AA3B78A1B70D36C00DD85EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3AA3B78C1B70D36C00DD85EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Playify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3AA3B78D1B70D36C00DD85EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Playify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3AA3B78F1B70D36C00DD85EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PlayifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playify.app/Contents/MacOS/Playify";
+			};
+			name = Debug;
+		};
+		3AA3B7901B70D36C00DD85EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PlayifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playify.app/Contents/MacOS/Playify";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA3B7661B70D36C00DD85EA /* Build configuration list for PBXProject "Playify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA3B7891B70D36C00DD85EA /* Debug */,
+				3AA3B78A1B70D36C00DD85EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA3B78B1B70D36C00DD85EA /* Build configuration list for PBXNativeTarget "Playify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA3B78C1B70D36C00DD85EA /* Debug */,
+				3AA3B78D1B70D36C00DD85EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3AA3B78E1B70D36C00DD85EA /* Build configuration list for PBXNativeTarget "PlayifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA3B78F1B70D36C00DD85EA /* Debug */,
+				3AA3B7901B70D36C00DD85EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AA3B7631B70D36C00DD85EA /* Project object */;
+}
