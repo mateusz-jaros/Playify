@@ -13,18 +13,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self.window setWantsLayer:YES];
     [self.window.layer setBackgroundColor:[[NSColor redColor] CGColor]];
     
 }
-
-- (void)drawRect:(NSRect)dirtyRect {
-    // Fill in background Color
-    CGContextRef context = (CGContextRef) [[NSGraphicsContext currentContext] graphicsPort];
-    CGContextSetRGBFillColor(context, 0.227,0.251,0.337,0.8);
-    CGContextFillRect(context, NSRectToCGRect(dirtyRect));
-}
-
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
@@ -47,6 +40,19 @@
 - (IBAction)nextTrack:(id)sender {
     NSAppleScript *nextTrack = [[NSAppleScript alloc] initWithSource:@"tell application \"Spotify\" to next track"];
     [nextTrack executeAndReturnError:nil];
+}
+
+- (IBAction)volumeSlider:(id)sender {
+    double volume = self.volumeSlider.doubleValue;
+    
+    NSString *scriptText = [NSString stringWithFormat:@"tell application \"Spotify\" to set sound volume to %f", volume];
+    
+    NSAppleScript *volumeSlider = [[NSAppleScript alloc] initWithSource:scriptText];
+    [volumeSlider executeAndReturnError:nil];
+    NSLog(@"%f", volume);
+}
+- (IBAction)exitButton:(id)sender {
+    [NSApp terminate:self];
 }
 
 @end

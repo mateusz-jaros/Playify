@@ -669,11 +669,15 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" appearanceType="aqua" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="100"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yBK-lZ-uKU">
-                                <rect key="frame" x="25" y="26" width="50" height="47"/>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="yBK-lZ-uKU">
+                                <rect key="frame" x="25" y="50" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="CEh-AT-aYl"/>
+                                    <constraint firstAttribute="height" constant="30" id="LmW-D6-nAe"/>
+                                </constraints>
                                 <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="back" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="LzR-dR-3kB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -682,8 +686,12 @@
                                     <action selector="previousTrack:" target="XfG-lQ-9wD" id="Zr0-qx-a2m"/>
                                 </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pL-Oz-3dp">
-                                <rect key="frame" x="125" y="26" width="50" height="47"/>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="3pL-Oz-3dp">
+                                <rect key="frame" x="85" y="50" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="j99-kq-1Dz"/>
+                                    <constraint firstAttribute="width" constant="30" id="yQy-Q2-8Gg"/>
+                                </constraints>
                                 <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="play" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="8aS-XD-as6">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -692,8 +700,12 @@
                                     <action selector="playPause:" target="XfG-lQ-9wD" id="xQF-U1-fyT"/>
                                 </connections>
                             </button>
-                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-I0-uTm">
-                                <rect key="frame" x="225" y="25" width="50" height="50"/>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-I0-uTm">
+                                <rect key="frame" x="145" y="50" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="H7F-SE-aX3"/>
+                                    <constraint firstAttribute="height" constant="30" id="S46-Im-7Hk"/>
+                                </constraints>
                                 <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="forwards" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gtz-SE-eaI">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -702,23 +714,58 @@
                                     <action selector="nextTrack:" target="XfG-lQ-9wD" id="U3K-ix-Fbn"/>
                                 </connections>
                             </button>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2so-39-LKe">
+                                <rect key="frame" x="25" y="15" width="150" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="0F9-Ss-DZh"/>
+                                    <constraint firstAttribute="height" constant="17" id="OTl-Yy-OtH"/>
+                                </constraints>
+                                <sliderCell key="cell" state="on" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="above" sliderType="linear" id="gXw-9r-RVR"/>
+                                <connections>
+                                    <action selector="volumeSlider:" target="XfG-lQ-9wD" id="laK-Nt-hcr"/>
+                                </connections>
+                            </slider>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-IU-0bF">
+                                <rect key="frame" x="185" y="85" width="10" height="10"/>
+                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="x" imagePosition="only" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="hla-Pb-Z5e">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="exitButton:" target="XfG-lQ-9wD" id="6ea-Ye-ICN"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2so-39-LKe" secondAttribute="bottom" constant="17" id="498-rc-JaE"/>
+                            <constraint firstItem="yBK-lZ-uKU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="FaE-wD-kht"/>
+                            <constraint firstAttribute="trailing" secondItem="2so-39-LKe" secondAttribute="trailing" constant="27" id="Tfp-lp-5dW"/>
+                            <constraint firstAttribute="centerX" secondItem="3pL-Oz-3dp" secondAttribute="centerX" id="YVs-1g-f2H"/>
+                            <constraint firstItem="yBK-lZ-uKU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="25" id="ds5-Dj-EDO"/>
+                            <constraint firstItem="2so-39-LKe" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="27" id="gnC-sM-22W"/>
+                            <constraint firstAttribute="trailing" secondItem="5Mg-I0-uTm" secondAttribute="trailing" constant="25" id="qjC-hg-Ii4"/>
+                            <constraint firstItem="3pL-Oz-3dp" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="u2D-ee-Uvq"/>
+                            <constraint firstItem="5Mg-I0-uTm" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="vyP-HX-4kI"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="exitButton" destination="MOa-IU-0bF" id="8F0-r4-a23"/>
                         <outlet property="nextTrack" destination="5Mg-I0-uTm" id="LU1-6W-iaG"/>
                         <outlet property="playPause" destination="3pL-Oz-3dp" id="kDo-iN-lLE"/>
                         <outlet property="previousTrack" destination="yBK-lZ-uKU" id="af7-ci-vy1"/>
+                        <outlet property="volumeSlider" destination="gXw-9r-RVR" id="R8c-K2-A6N"/>
                         <outlet property="window" destination="m2S-Jp-Qdl" id="KO0-U4-jNO"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="759"/>
+            <point key="canvasLocation" x="85" y="863"/>
         </scene>
     </scenes>
     <resources>
         <image name="back" width="512" height="360"/>
         <image name="forwards" width="512" height="360"/>
         <image name="play" width="512" height="649"/>
+        <image name="x" width="512" height="512"/>
     </resources>
 </document>
