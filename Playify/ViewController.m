@@ -16,20 +16,15 @@
     
     [self.window setWantsLayer:YES];
     [self.window.layer setBackgroundColor:[[NSColor redColor] CGColor]];
-    
 }
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
 }
 
 - (IBAction)playPause:(id)sender {
     NSAppleScript *playPause = [[NSAppleScript alloc] initWithSource:@"tell application \"Spotify\" to playpause"];
     [playPause executeAndReturnError:nil];
-    
-    self.playPause.image = [NSImage imageNamed:@"pause"];
 }
 
 - (IBAction)previousTrack:(id)sender {

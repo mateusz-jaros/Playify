@@ -673,12 +673,11 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button translatesAutoresizingMaskIntoConstraints="NO" id="yBK-lZ-uKU">
-                                <rect key="frame" x="25" y="50" width="30" height="30"/>
+                                <rect key="frame" x="27" y="53" width="25" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="CEh-AT-aYl"/>
-                                    <constraint firstAttribute="height" constant="30" id="LmW-D6-nAe"/>
+                                    <constraint firstAttribute="width" constant="25" id="xWC-ch-Vd5"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="back" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="LzR-dR-3kB">
+                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="previous" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="LzR-dR-3kB">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -698,20 +697,6 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="playPause:" target="XfG-lQ-9wD" id="xQF-U1-fyT"/>
-                                </connections>
-                            </button>
-                            <button translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-I0-uTm">
-                                <rect key="frame" x="145" y="50" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="H7F-SE-aX3"/>
-                                    <constraint firstAttribute="height" constant="30" id="S46-Im-7Hk"/>
-                                </constraints>
-                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="forwards" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gtz-SE-eaI">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="nextTrack:" target="XfG-lQ-9wD" id="U3K-ix-Fbn"/>
                                 </connections>
                             </button>
                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2so-39-LKe">
@@ -735,17 +720,33 @@
                                     <action selector="exitButton:" target="XfG-lQ-9wD" id="6ea-Ye-ICN"/>
                                 </connections>
                             </button>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="5Mg-I0-uTm">
+                                <rect key="frame" x="148" y="53" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="Ye1-ge-tLc"/>
+                                    <constraint firstAttribute="height" constant="25" id="iIT-7S-hYG"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" bezelStyle="texturedSquare" image="next" imagePosition="overlaps" alignment="center" state="on" imageScaling="proportionallyDown" inset="2" id="gtz-SE-eaI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="nextTrack:" target="XfG-lQ-9wD" id="U3K-ix-Fbn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="2so-39-LKe" secondAttribute="bottom" constant="17" id="498-rc-JaE"/>
-                            <constraint firstItem="yBK-lZ-uKU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="FaE-wD-kht"/>
+                            <constraint firstItem="2so-39-LKe" firstAttribute="top" secondItem="5Mg-I0-uTm" secondAttribute="bottom" constant="19" id="AhX-Be-26d"/>
                             <constraint firstAttribute="trailing" secondItem="2so-39-LKe" secondAttribute="trailing" constant="27" id="Tfp-lp-5dW"/>
                             <constraint firstAttribute="centerX" secondItem="3pL-Oz-3dp" secondAttribute="centerX" id="YVs-1g-f2H"/>
-                            <constraint firstItem="yBK-lZ-uKU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="25" id="ds5-Dj-EDO"/>
+                            <constraint firstItem="5Mg-I0-uTm" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="Zm8-zx-esn"/>
+                            <constraint firstAttribute="trailing" secondItem="5Mg-I0-uTm" secondAttribute="trailing" constant="27" id="aPA-Vd-Tye"/>
                             <constraint firstItem="2so-39-LKe" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="27" id="gnC-sM-22W"/>
-                            <constraint firstAttribute="trailing" secondItem="5Mg-I0-uTm" secondAttribute="trailing" constant="25" id="qjC-hg-Ii4"/>
+                            <constraint firstItem="yBK-lZ-uKU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="27" id="mrM-QA-Wha"/>
+                            <constraint firstItem="2so-39-LKe" firstAttribute="top" secondItem="yBK-lZ-uKU" secondAttribute="bottom" constant="19" id="nHr-ST-iKP"/>
                             <constraint firstItem="3pL-Oz-3dp" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="u2D-ee-Uvq"/>
-                            <constraint firstItem="5Mg-I0-uTm" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="vyP-HX-4kI"/>
+                            <constraint firstItem="yBK-lZ-uKU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="22" id="vdK-aq-wAb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -763,9 +764,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="512" height="360"/>
-        <image name="forwards" width="512" height="360"/>
-        <image name="play" width="512" height="649"/>
-        <image name="x" width="512" height="512"/>
+        <image name="next" width="200" height="200"/>
+        <image name="play" width="200" height="200"/>
+        <image name="previous" width="200" height="200"/>
+        <image name="x" width="114" height="114"/>
     </resources>
 </document>
