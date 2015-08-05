@@ -10,6 +10,11 @@
 
 @interface ViewController : NSViewController
 
+@property (strong) IBOutlet NSView *window;
+
+@property (weak) IBOutlet NSButton *playPause;
+@property (weak) IBOutlet NSButton *previousTrack;
+@property (weak) IBOutlet NSButton *nextTrack;
 
 @end
 
